@@ -1,0 +1,28 @@
+#btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btn.on {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#btn.off {
+  background-color: #f44336;
+  color: white;
+}
+
+#btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
