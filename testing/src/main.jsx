@@ -1,10 +1,32 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import OnOff from './ejemplos/OnOff.jsx'
+import Card from './ejemplos/Card.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <OnOff />
+    {/* <OnOff /> */}
+    {/* <ProductCard /> */}
+    {/* <TwitterCard userName='jperez' initialIsFollowing={false} > @ssanchez </TwitterCard> */}
+    {/* <Video /> */}
+    
+    <Card 
+      userName='jsuarez'
+      onFollow='true'
+      formatUserName={(name) => name.toUpperCase()}
+    >
+      Me gustan los deportes de montaña
+    </Card>
+    
+    <Card 
+      userName="jperez"
+      onFollow='true'
+      formatUserName={(name) => name.toUpperCase()}
+    >
+      Me gusta la tecnología
+      <div>
+        <a href="">link a bio</a>
+      </div>
+    </Card>
   </StrictMode>,
 )
