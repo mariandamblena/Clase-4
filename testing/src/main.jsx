@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Card from './ejemplos/Card.jsx'
+import Card from './componentes/Card.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
